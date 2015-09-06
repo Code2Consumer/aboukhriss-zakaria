@@ -1,0 +1,62 @@
+ jQuery(document).ready(function(){
+
+    	$("#top-left").click(function(){
+    		$('#contact').css('left', '0');
+    	});
+
+    	$("#back-home").click(function(){
+    		$('#contact').css('left', '-100%');
+    	});
+
+
+    	$("#top-left, #top-right, #top-center, #lif, #lis, #lit, #back-home, #corp-contact").mouseover(function(){$(this).addClass('over');});    	
+    	$("#top-left, #top-right, #top-center, #lif, #lis, #lit, #back-home, #corp-contact").mouseout(function(){$(this).removeClass('over');});
+
+
+ 	    $(".sbg").mouseover(function(){$(this).css('background', 'white');});
+
+       	$(".sbg").mouseout(function(){$(this).css('background', 'rgba(255, 255, 255, 0.45)');}); 
+
+
+    	$("#lif").click(function(){
+    		document.getElementById("Parcour").style.height="1400px";
+    		document.getElementById("top-center").style.opacity="1";
+    		document.getElementById("top-left").style.opacity="0";
+    		document.getElementById("top-right").style.opacity="0";
+    		document.getElementById("Parcour").style.top="60px";
+    		document.getElementById("top-bar").style.background="#935130";
+    	});
+
+    	$("#lis").click(function(){
+    		document.getElementById("Realisation").style.height="1920px";
+    		document.getElementById("top-center").style.opacity="1";
+    		document.getElementById("top-left").style.opacity="0";
+    		document.getElementById("top-right").style.opacity="0";
+    		document.getElementById("top-bar").style.background="#75A319";
+    		document.getElementById("Realisation").style.top="60px";}); 
+
+    	$("#lit").click(function(){
+    		document.getElementById("Outils").style.height="2100px";  
+    		document.getElementById("top-bar").style.background="#CCB100";
+    		document.getElementById("top-left").style.opacity="0";
+    		document.getElementById("top-right").style.opacity="0";
+    		document.getElementById("top-center").style.opacity="1";
+    		document.getElementById("Outils").style.top="60px";});
+
+    	$("#top-center").click(function(){
+    		document.getElementById("top-center").style.opacity="0";
+      		document.getElementById("top-bar").style.background="#2477AD";
+
+    		document.getElementById("top-left").style.opacity="1";
+    		document.getElementById("top-right").style.opacity="1";
+
+    		document.getElementById("Outils").style.height="0";
+    		document.getElementById("Outils").style.top="100%";
+
+    		document.getElementById("Realisation").style.height="0";
+    		document.getElementById("Realisation").style.top="100%";
+
+    		document.getElementById("Parcour").style.height="0%";
+    		document.getElementById("Parcour").style.top="100%";
+    	});
+    });
