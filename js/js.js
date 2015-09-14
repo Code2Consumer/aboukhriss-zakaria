@@ -1,21 +1,24 @@
  jQuery(document).ready(function(){
 
-    	$("#top-left").click(function(){
+    	$("#top-left").live("click", function(){
+            if ($("#contact").html().length < 5) {
+                $("#contact").load("templates/contact.html");
+            };
     		$('#contact').css('left', '0');
         });
 
-    	$("#back-home").click(function(){
+    	$("#back-home").live("click", function(){
     		$('#contact').css('left', '-100%');
     	});
 
 
-    	$("#top-left, #top-right, #top-center, #lif, #lis, #lit, #back-home, #corp-contact").mouseover(function(){$(this).addClass('over');});    	
-    	$("#top-left, #top-right, #top-center, #lif, #lis, #lit, #back-home, #corp-contact").mouseout(function(){$(this).removeClass('over');});
+    	$("#top-left, #top-right, #top-center, #lif, #lis, #lit, #back-home, #corp-contact").live("mouseover", function(){$(this).addClass('over');});    	
+    	$("#top-left, #top-right, #top-center, #lif, #lis, #lit, #back-home, #corp-contact").live("mouseout", function(){$(this).removeClass('over');});
 
 
- 	    $(".sbg").mouseover(function(){$(this).css('background', 'white');});
+ 	    $(".sbg").live("mouseover", function(){$(this).css('background', 'white');});
 
-       	$(".sbg").mouseout(function(){$(this).css('background', 'rgba(255, 255, 255, 0.45)');}); 
+       	$(".sbg").live("mouseout", function(){$(this).css('background', 'rgba(255, 255, 255, 0.45)');}); 
 
 
     	$("#lif").click(function(){
@@ -40,12 +43,11 @@
             document.getElementById("top-right").style.opacity="0";
             document.getElementById("top-bar").style.background="#75A319";
             document.getElementById("Realisation").style.top="60px";}); 
-
-        $("#lit").click(function(){
+       $("#lit").click(function(){
             if ($("#Outils").html().length < 5) {
                 $("#Outils").load("templates/outils.html");
             };
-    		document.getElementById("Outils").style.height="2100px";  
+    		document.getElementById("Outils").style.height="2222px";  
     		document.getElementById("top-bar").style.background="#CCB100";
     		document.getElementById("top-left").style.opacity="0";
     		document.getElementById("top-right").style.opacity="0";
