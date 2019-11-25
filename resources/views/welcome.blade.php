@@ -1,5 +1,5 @@
 <!DOCTYPE HTML SYSTEM>
-<html>
+<html lang="{{ app()->getLocale() }}">
 <head>
 	<title>Aboukhriss Zakaria - Portfolio, Compétences et Réalisations.</title>
 	<meta charset="utf-8">
@@ -26,7 +26,7 @@
 </head>
 <body>
 
-
+		<div id="app"></div>
 		<div id="top-bar"  class="pointer">
 			<div id="top-left" class="pointer">
 		<span id="arrow-contact" class="pointer glyphicon glyphicon-chevron-left"></span> <label style="position: relative; bottom: 12px;" class='pointer'>Contact</label> </div>
@@ -43,9 +43,9 @@
 
 		<div id="menu">
 			<ul>
-				<li id="lif" class="pointer"> <span class="glyphicon glyphicon-book icons"></span> <br> Mon Parcours</li>
-				<li id="lis" class="pointer">  <span class="glyphicon glyphicon-folder-open icons"></span> <br> Mes R&eacute;alisations </li>
-				<li id="lit" class="pointer">  <span class="glyphicon glyphicon-wrench icons"></span> <br> Outils Utilis&eacute; </li>
+				<li class="pointer button-page" data-target-id="parcour"> <span class="glyphicon glyphicon-book icons"></span> <br> Mon Parcours</li>
+				<li class="pointer button-page" data-target-id="realisation">  <span class="glyphicon glyphicon-folder-open icons"></span> <br> Mes R&eacute;alisations </li>
+				<li class="pointer button-page" data-target-id="outil">  <span class="glyphicon glyphicon-wrench icons"></span> <br> Outils Utilis&eacute; </li>
 			</ul>
 		</div>
 		<footer>
@@ -57,18 +57,11 @@
 		</footer>
 	</div>
 
-	<div id="contact">
 	</div>
-
-	<div id="Parcour">
-	</div>
-
-	<div id="Realisation">
-	</div>
-
-	<div id="Outils">
-	</div>
-
+	<div id="contact" class="page-container" data-url="{{ route('blade_template.show', 'contact') }}"></div>
+	<div id="parcour" class="page-container" data-url="{{ route('blade_template.show', 'parcour') }}"></div>
+	<div id="realisation" class="page-container" data-url="{{ route('blade_template.show', 'realisations') }}"></div>
+	<div id="outil" class="page-container" data-url="{{ route('blade_template.show', 'outils') }}"></div>
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
