@@ -2,6 +2,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #2477AD !important;
+  //overflow: hidden;
 }
 
 #top-bar, #lif, #lis, #lit {
@@ -19,6 +20,23 @@ body {
 
 .newpolice {
   font-family: 'Lobster', cursive;
+}
+
+.page-container{
+  display: block !important;
+  height: auto;
+  overflow: auto;
+  width: 100%;
+  top: 100%;
+  position: fixed;
+  color: white;
+  font-size: 15px;
+  padding-left: 20px;
+  //transition: height 1.0s, top 1.0s;
+  -webkit-transition: height 1s, top 1s;
+  -moz-transition: height 1s, top 1s;
+  -o-transition: height 1s, top 1s;
+  transition: height 1s, top 1s;
 }
 
 #home {
@@ -122,21 +140,6 @@ body {
   font-size: 50px;
 }
 
-#parcour, #realisation, #outil {
-  height: 0;
-  overflow: hidden;
-  width: 100%;
-  top: 100%;
-  position: absolute;
-  color: white;
-  font-size: 15px;
-  padding-left: 20px;
-  transition: height 1.0s, top 1.0s;
-  -webkit-transition: height 1s, top 1s;
-  -moz-transition: height 1s, top 1s;
-  -o-transition: height 1s, top 1s;
-  transition: height 1s, top 1s;
-}
 
 #outil {
   background: $page-outil-bg;
@@ -204,8 +207,8 @@ body {
   padding-left: 300px;
 }
 
-#article-container {
-  padding-top: 80px;
+.article-container {
+  padding-top: 30px;
 }
 
 #parcour {
@@ -227,8 +230,8 @@ body {
   float: left;
 }
 
-.container {
-  padding-top: 150px;
+.page-container {
+  padding-bottom: 150px;
 }
 
 #back-home {

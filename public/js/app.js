@@ -19317,12 +19317,12 @@ jQuery(document).ready(function () {
     }
 
     ;
-    setAutoHeight(domElement);
     $("#top-bar").css("background", domElement.css('background-color'));
     $("#top-center").css("opacity", "1");
     $("#top-left").css("opacity", "0");
     $("#top-right").css("opacity", "0");
     $(domElement).css("top", "60px");
+    setAutoHeight(domElement);
   });
   $("#top-center").click(function () {
     $("#top-center").css("opacity", "0");
@@ -19349,11 +19349,11 @@ jQuery(document).ready(function () {
   }
 
   function setAutoHeight(DOMlement) {
-    var elementH = DOMlement.height();
-    var bodyH = $('body').height();
-    elementH = elementH > bodyH ? elementH : bodyH;
-    console.log(elementH);
-    DOMlement.height(elementH);
+    DOMlement.css('height', '100%'); // DOMlement.css('height', DOMlement.css("height"));
+    // var elementH = DOMlement.css('height');
+    // DOMlement.css('height', elementH);
+    // var bodyH = $('body').height();
+    // elementH = elementH > bodyH ? elementH : bodyH;
   }
 });
 

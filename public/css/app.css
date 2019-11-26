@@ -21,6 +21,21 @@
   font-family: "Lobster", cursive;
 }
 
+.page-container {
+  display: block !important;
+  height: auto;
+  overflow: auto;
+  width: 100%;
+  top: 100%;
+  position: fixed;
+  color: white;
+  font-size: 15px;
+  padding-left: 20px;
+  -webkit-transition: height 1s, top 1s;
+  transition: height 1s, top 1s;
+  scrollbar-width: thin;
+}
+
 #home {
   color: rgba(255, 255, 255, 0.45);
 }
@@ -116,22 +131,6 @@
   font-size: 50px;
 }
 
-#parcour,
-#realisation,
-#outil {
-  height: 0;
-  overflow: hidden;
-  width: 100%;
-  top: 100%;
-  position: absolute;
-  color: white;
-  font-size: 15px;
-  padding-left: 20px;
-  transition: height 1s, top 1s;
-  -webkit-transition: height 1s, top 1s;
-  transition: height 1s, top 1s;
-}
-
 #outil {
   background: #34d3a4;
   color: black;
@@ -200,8 +199,8 @@
   padding-left: 300px;
 }
 
-#article-container {
-  padding-top: 80px;
+.article-container {
+  padding-top: 30px;
 }
 
 #parcour {
@@ -223,8 +222,9 @@
   float: left;
 }
 
-.container {
-  padding-top: 150px;
+.page-inner-container {
+  padding-bottom: 150px;
+  padding-top: 80px;
 }
 
 #back-home {
