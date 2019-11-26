@@ -69,10 +69,5 @@
 
     	function setAutoHeight(DOMlement){
             DOMlement.css('height', '100%');
-            // DOMlement.css('height', DOMlement.css("height"));
-            // var elementH = DOMlement.css('height');
-            // DOMlement.css('height', elementH);
-            // var bodyH = $('body').height();
-            // elementH = elementH > bodyH ? elementH : bodyH;
         }
     });

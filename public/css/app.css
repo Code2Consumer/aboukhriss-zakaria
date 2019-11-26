@@ -31,9 +31,9 @@
   color: white;
   font-size: 15px;
   padding-left: 20px;
+  scrollbar-width: thin;
   -webkit-transition: height 1s, top 1s;
   transition: height 1s, top 1s;
-  scrollbar-width: thin;
 }
 
 #home {
@@ -222,7 +222,7 @@
   float: left;
 }
 
-.page-inner-container {
+.page-container {
   padding-bottom: 150px;
   padding-top: 80px;
 }

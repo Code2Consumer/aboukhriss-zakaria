@@ -1,4 +1,4 @@
-<span id="back-home" class="pointer glyphicon glyphicon-chevron-left"></span>
+<span id="back-home" class="pointer glyphicon glyphicon-chevron-right"></span>
 <div id="corp-contact">
     <img src="images/zakaria-aboukhriss.jpg">
     <h1>Aboukhriss Zakaria</h1>

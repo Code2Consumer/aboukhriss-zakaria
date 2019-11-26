@@ -32,7 +32,7 @@ body {
   color: white;
   font-size: 15px;
   padding-left: 20px;
-  //transition: height 1.0s, top 1.0s;
+  scrollbar-width: thin;
   -webkit-transition: height 1s, top 1s;
   -moz-transition: height 1s, top 1s;
   -o-transition: height 1s, top 1s;
@@ -232,6 +232,7 @@ body {
 
 .page-container {
   padding-bottom: 150px;
+  padding-top: 80px;
 }
 
 #back-home {
