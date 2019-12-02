@@ -1,4 +1,7 @@
 <div class="page-inner-container">
+        {{--@foreach ($data as $project)--}}
+            {{--{{ $project->name }}--}}
+        {{--@endforeach--}}
     <div class="article-container">
         <h3><a href="http://www.dodge-skill.com" title="DodgeSkill" style="color: white;">Jeu video: DodgeSkill</a></h3>
         <br>

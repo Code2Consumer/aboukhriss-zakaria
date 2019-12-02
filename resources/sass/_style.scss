@@ -151,42 +151,10 @@ body {
   height: 80px;
 }
 
-#outil #progress-bar {
-  border: 1px solid black;
-  border-radius: 5px;
-  height: 16px;
-  width: 270px;
-  overflow: hidden;
-  font-size: 12px;
-}
-
-#outil #progress {
-  transition: background 1.0s;
-  background-color: rgba(255, 255, 255, 0.45);
-  float: left;
-  height: 20px;
-  width: 50%;
-  text-align: center;
-}
-
 #liste-outils {
   list-style-type: none;
   margin: 0px 20% 0px 0px;
   display: inline-block;
-}
-
-.img-cadre {
-  margin-top: 130px;
-}
-
-.img-cadre img {
-  margin-left: 230px;
-  float: left;
-}
-
-.img-cadre h5, #progress-bar {
-  margin-left: 400px;
-  font-weight: 600;
 }
 
 #realisation {

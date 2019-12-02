@@ -1,4 +1,7 @@
 <div class="page-inner-container">
+{{--    @foreach ($data as $experience)
+        {{ $experience->name }}
+    @endforeach--}}
     <span class="glyphicon glyphicon-edit" id="left-icon-c"></span>
     <p>
         2014 &agrave; 2015 - BTS SIO (SLAM) en contrat d'apprentissage 2&deg;ann&eacute;e - CFA INSTA Paris
