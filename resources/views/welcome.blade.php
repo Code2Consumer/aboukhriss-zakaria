@@ -48,14 +48,20 @@
 
     <div id="menu">
         <ul>
-            <li class="pointer button-page" data-target-id="parcour"><span
-                        class="glyphicon glyphicon-book icons"></span> <br> Mon Parcours
+            <li class="pointer button-page" data-target-id="parcour">
+                <span class="glyphicon glyphicon-book icons"></span>
+                <br>
+                Mon Parcours
             </li>
-            <li class="pointer button-page" data-target-id="realisation"><span
-                        class="glyphicon glyphicon-folder-open icons"></span> <br> Mes R&eacute;alisations
+            <li class="pointer button-page" data-target-id="realisation">
+                <span class="glyphicon glyphicon-folder-open icons"></span>
+                <br>
+                Mes R&eacute;alisations
             </li>
-            <li class="pointer button-page" data-target-id="outil"><span
-                        class="glyphicon glyphicon-wrench icons"></span> <br> Outils Utilis&eacute;
+            <li class="pointer button-page" data-target-id="outil">
+                <span class="glyphicon glyphicon-wrench icons"></span>
+                <br>
+                Outils Utilis&eacute;
             </li>
         </ul>
     </div>
@@ -70,9 +76,9 @@
 
 </div>
 <div id="contact" data-url="{{ route('blade_template.show', 'contact') }}"></div>
-<div id="parcour" class="page-container" data-url="{{ route('blade_template.show', 'parcour') }}"></div>
-<div id="realisation" class="page-container" data-url="{{ route('blade_template.show', 'realisations') }}"></div>
-<div id="outil" class="page-container" data-url="{{ route('blade_template.show', 'outils') }}"></div>
+<div id="parcour" class="page-container" data-url="{{ route('blade_template.show', 'experience') }}"></div>
+<div id="realisation" class="page-container" data-url="{{ route('blade_template.show', 'project') }}"></div>
+<div id="outil" class="page-container" data-url="{{ route('blade_template.show', 'skill') }}"></div>
 <script>
     (function (h, o, t, j, a, r) {
         h.hj = h.hj || function () {

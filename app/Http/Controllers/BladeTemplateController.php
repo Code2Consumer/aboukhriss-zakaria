@@ -16,9 +16,9 @@ class BladeTemplateController extends Controller
     //
     private $classMapping = [
         'contact' => null,
-        'outils' => Skill::class,
-        'parcour' => Experience::class,
-        'realisations' => Project::class,
+        'skill' => Skill::class,
+        'experience' => Experience::class,
+        'project' => Project::class,
     ];
 
     /**
