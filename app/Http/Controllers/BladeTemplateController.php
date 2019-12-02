@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Experience;
 use App\Interfaces\Templatable;
 use App\Project;
 use App\Skill;
@@ -16,7 +17,7 @@ class BladeTemplateController extends Controller
     private $classMapping = [
         'contact' => null,
         'outils' => Skill::class,
-        'parcour' => Study::class,
+        'parcour' => Experience::class,
         'realisations' => Project::class,
     ];
 
