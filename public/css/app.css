@@ -36,15 +36,6 @@
   transition: height 1s, top 1s;
 }
 
-.button-page {
-  -webkit-transition: color 1s, top 1s;
-  transition: color 1s, top 1s;
-}
-
-.button-page:hover {
-  color: white;
-}
-
 #home {
   color: rgba(255, 255, 255, 0.45);
 }
@@ -65,15 +56,12 @@
 #top-center {
   margin-left: 50%;
   opacity: 0;
-  transition: color 1s;
-  -webkit-transition: color 1s;
-  transition: color 1s;
+  font-weight: bolder;
 }
 
 #top-left,
 #top-center,
 #top-right {
-  transition: opacity 1s;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
@@ -245,7 +233,6 @@
   height: 300px;
 }
 
-#back-home,
 #corp-contact {
   transition: color 1s;
   -webkit-transition: color 1s;
@@ -254,6 +241,12 @@
 
 .pointer {
   cursor: pointer;
+  -webkit-transition: color 1s !important;
+  transition: color 1s !important;
+}
+
+.pointer:hover {
+  color: white;
 }
 
 #bottom_right {
@@ -266,6 +259,10 @@
 #bottom_right img {
   max-height: 15px;
   max-width: 22px;
+}
+
+#logo-container {
+  color: rgba(254, 255, 252, 0.7);
 }
 
 /* Hexagons */

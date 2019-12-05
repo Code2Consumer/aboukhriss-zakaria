@@ -19295,18 +19295,6 @@ jQuery(document).ready(function () {
   });
   $("#back-home").live("click", function () {
     $('#contact').css('left', '-100%');
-  });
-  $("#top-left, #top-right, #top-center, #lif, #lis, #lit, #back-home, #corp-contact").live("mouseover", function () {
-    $(this).addClass('over');
-  });
-  $("#top-left, #top-right, #top-center, #lif, #lis, #lit, #back-home, #corp-contact").live("mouseout", function () {
-    $(this).removeClass('over');
-  });
-  $(".sbg").live("mouseover", function () {
-    $(this).css('background-color', 'white');
-  });
-  $(".sbg").live("mouseout", function () {
-    $(this).css('background-color', 'rgba(255, 255, 255, 0.45)');
   }); //target-id
 
   $(".button-page").click(function () {

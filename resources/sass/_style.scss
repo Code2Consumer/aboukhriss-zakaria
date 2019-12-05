@@ -22,7 +22,7 @@ body {
   font-family: 'Lobster', cursive;
 }
 
-.page-container {
+.page-container{
   display: block !important;
   height: auto;
   overflow: auto;
@@ -37,17 +37,6 @@ body {
   -moz-transition: height 1s, top 1s;
   -o-transition: height 1s, top 1s;
   transition: height 1s, top 1s;
-}
-
-.button-page {
-  -webkit-transition: color 1s, top 1s;
-  -moz-transition: color 1s, top 1s;
-  -o-transition: color 1s, top 1s;
-  transition: color 1s, top 1s;
-}
-
-.button-page:hover {
-  color: white;
 }
 
 #home {
@@ -72,15 +61,10 @@ body {
 #top-center {
   margin-left: 50%;
   opacity: 0;
-  transition: color 1.0s;
-  -webkit-transition: color 1s;
-  -moz-transition: color 1s;
-  -o-transition: color 1s;
-  transition: color 1s;
+  font-weight: bolder;
 }
 
 #top-left, #top-center, #top-right {
-  transition: opacity 1.0s;
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
@@ -150,6 +134,7 @@ body {
 .icons {
   font-size: 50px;
 }
+
 
 #outil {
   background: $page-outil-bg;
@@ -258,7 +243,7 @@ body {
   height: 300px;
 }
 
-#back-home, #corp-contact {
+#corp-contact {
   transition: color 1.0s;
   -webkit-transition: color 1s;
   -moz-transition: color 1s;
@@ -268,6 +253,13 @@ body {
 
 .pointer {
   cursor: pointer;
+  -webkit-transition: color 1s !important;
+  -moz-transition: color 1s !important;
+  -o-transition: color 1s !important;
+  transition: color 1s !important;
+}
+.pointer:hover {
+  color: white;
 }
 
 #bottom_right {
@@ -280,4 +272,8 @@ body {
 #bottom_right img {
   max-height: 15px;
   max-width: 22px;
+}
+
+#logo-container{
+  color: rgba(254, 255, 252, 0.7);
 }

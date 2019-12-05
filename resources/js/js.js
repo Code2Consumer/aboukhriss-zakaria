@@ -18,9 +18,6 @@
     	});
 
 
-    	$("#top-left, #top-right, #top-center, #lif, #lis, #lit, #back-home, #corp-contact").live("mouseover", function(){$(this).addClass('over');});
-    	$("#top-left, #top-right, #top-center, #lif, #lis, #lit, #back-home, #corp-contact").live("mouseout", function(){$(this).removeClass('over');});
-
 //target-id
 
          $(".button-page").click(function(){
