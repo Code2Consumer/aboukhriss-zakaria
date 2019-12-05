@@ -22,7 +22,7 @@ body {
   font-family: 'Lobster', cursive;
 }
 
-.page-container{
+.page-container {
   display: block !important;
   height: auto;
   overflow: auto;
@@ -37,6 +37,17 @@ body {
   -moz-transition: height 1s, top 1s;
   -o-transition: height 1s, top 1s;
   transition: height 1s, top 1s;
+}
+
+.button-page {
+  -webkit-transition: color 1s, top 1s;
+  -moz-transition: color 1s, top 1s;
+  -o-transition: color 1s, top 1s;
+  transition: color 1s, top 1s;
+}
+
+.button-page:hover {
+  color: white;
 }
 
 #home {
@@ -139,7 +150,6 @@ body {
 .icons {
   font-size: 50px;
 }
-
 
 #outil {
   background: $page-outil-bg;
@@ -245,6 +255,7 @@ body {
 #corp-contact > img {
   float: left;
   margin-right: 20px;
+  height: 300px;
 }
 
 #back-home, #corp-contact {
