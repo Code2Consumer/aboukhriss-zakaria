@@ -1,39 +1,78 @@
-<?php
+<?php namespace App;
 
-namespace App;
+use App\Traits\UserAccess;
+use Illuminate\Auth\Authenticatable;
+use Illuminate\Auth\Passwords\CanResetPassword;
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\HasDatabaseNotifications;
+use Orchid\Screen\AsSource;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class User extends Model implements AuthenticatableContract, CanResetPasswordContract
 {
-    use Notifiable;
+
+    use Authenticatable, CanResetPassword, UserAccess, AsSource, HasDatabaseNotifications;
 
     /**
-     * The attributes that are mass assignable.
+     * @var
+     */
+    protected static $rolesModel = Roles::class;
+
+    /**
+     * The database table used by the model.
      *
+     * @var string
+     */
+    protected $table = 'users';
+
+    /**
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'email',
+        'permissions',
     ];
 
     /**
-     * The attributes that should be hidden for arrays.
+     * The attributes excluded from the model's JSON form.
      *
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password',
+        'remember_token',
     ];
 
     /**
-     * The attributes that should be cast to native types.
+     * Display name.
      *
-     * @var array
+     * @return string
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    public function getNameTitle(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     *
+     * @return string
+     */
+    public function getAvatar(): string
+    {
+        $hash = md5(strtolower(trim($this->email)));
+
+        return "https://www.gravatar.com/avatar/$hash";
+    }
+
+    /**
+     * Display sub.
+     *
+     * @return string
+     */
+    public function getSubTitle(): string
+    {
+        return 'Administrator';
+    }
 }

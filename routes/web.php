@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('templates/{name}', 'BladeTemplateController@getTemplate')->name('blade_template.show');
+//Route::get('templates/{name}', 'BladeTemplateController@getTemplate')->name('blade_template.show');
