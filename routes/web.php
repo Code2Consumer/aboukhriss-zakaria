@@ -16,3 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('templates/{name}', 'BladeTemplateController@getTemplate')->name('blade_template.show');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
